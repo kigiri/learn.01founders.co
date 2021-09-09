@@ -2,8 +2,15 @@ window.dataLayer = Object.entries({ js: new Date(), config: 'G-F624SLM32R' })
 document.body.innerHTML += '<script async src="https://www.googletagmanager.com/gtag/js?id=G-F624SLM32R"></script>'
 
 const leftContent = document.querySelector('.left')
+const rightContent = document.querySelector('.right')
 const textContent = document.querySelector('.text')
 const contactContent = document.querySelector('.contact')
+
+const htmlVideoString = `
+  <iframe width="500" height="300" src="https://www.youtube.com/embed/0CWzFx1HRvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-bottom: 100px;"></iframe>
+`
+
+rightContent.insertAdjacentHTML('afterbegin', htmlVideoString)
 
 const contentString = `
         <span id="zone-01">Zone 01 is our collaborative coding education platform.</span>
