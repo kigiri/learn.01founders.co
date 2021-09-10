@@ -35,13 +35,13 @@ const contactString = `
 
       <div id="about-us">Want to know more about 01 Founders, London's new free coding school, with a job guarantee?&thinsp;</div>
       <div class="contact">
-      <a id="contact-link" target="_blank" href="https://www.01founders.co/">
+      <a target="_blank" href="https://www.01founders.co/">
         <span class="arrow">→</span>
         <span id="contact">Visit our main website.</span>
       </a>
       </div>
       <div class="contact">
-      <a id="contact-link" target="_blank" href="https://www.01founders.co/faq">
+      <a target="_blank" href="https://www.01founders.co/faq">
         <span class="arrow">→</span>
         <span id="faq">Read the Frequently Asked Questions</span>
       </a>
