@@ -46,12 +46,6 @@ const contactString = `
         <span id="faq">Read the Frequently Asked Questions</span>
       </a>
       </div>
-      <div class="contact">
-      <a id="contact-link" target="_blank" href="mailto:theteam@01founders.co" style="display:block;">
-        <span class="arrow">→</span>
-        <span id="contact">Contact us.</span>
-      </a>
-      </div>
 `
 
 textContent.innerHTML = contentString
