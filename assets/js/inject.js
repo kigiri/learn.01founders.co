@@ -3,7 +3,6 @@ document.body.innerHTML += '<script async src="https://www.googletagmanager.com/
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'G-N86JQSKK9B');
 
 const leftContent = document.querySelector('.left')
@@ -49,6 +48,12 @@ const contactString = `
       <a target="_blank" href="https://www.01founders.co/faq">
         <span class="arrow">→</span>
         <span id="faq">Read the Frequently Asked Questions</span>
+      </a>
+      </div>
+      <div class="contact" style="display:none;">
+      <a id="contact-link" target="_blank" href="mailto:theteam@01founders.co" style="display:block;">
+        <span class="arrow">→</span>
+        <span id="contact">Contact us.</span>
       </a>
       </div>
 `
