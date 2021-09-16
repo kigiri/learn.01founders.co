@@ -1,8 +1,10 @@
-document.body.innerHTML += '<script async src="https://www.google-analytics.com/analytics.js"></script>'
+document.body.innerHTML += '<script async src="https://www.googletagmanager.com/gtag/js?id=G-N86JQSKK9B"></script>'
 
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'G-F624SLM32R', 'auto');
-ga('send', 'pageview');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-N86JQSKK9B');
 
 const leftContent = document.querySelector('.left')
 const rightContent = document.querySelector('.right')
