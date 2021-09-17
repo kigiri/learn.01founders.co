@@ -1,5 +1,9 @@
 document.body.innerHTML += `
-<script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2942291289344991&ev=PageView&noscript=1"
+/></noscript>
+`
+
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -10,31 +14,30 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2942291289344991');
 fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2942291289344991&ev=PageView&noscript=1"
-/></noscript>
-`
 
 document.body.innerHTML += '<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLXP00HX2X"></script>'
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+
+function gtag() {
+  dataLayer.push(arguments);
+}
 gtag('js', new Date());
 
 gtag('config', 'G-FLXP00HX2X');
 
-const leftContent = document.querySelector('.left')
-const rightContent = document.querySelector('.right')
-const textContent = document.querySelector('.text')
-const contactContent = document.querySelector('.contact')
+if (location.pathname === "/") {
 
-const htmlVideoString = `
+  const rightContent = document.querySelector('.right')
+  const textContent = document.querySelector('.text')
+  const contactContent = document.querySelector('.contact')
+
+  const htmlVideoString = `
   <iframe width="500" height="300" src="https://www.youtube.com/embed/0CWzFx1HRvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-bottom: 100px;"></iframe>
 `
 
-rightContent.insertAdjacentHTML('afterbegin', htmlVideoString)
+  rightContent.insertAdjacentHTML('afterbegin', htmlVideoString)
 
-const contentString = `
+  const contentString = `
         <span id="zone-01">Zone 01 is our collaborative coding education platform.</span>
         <br><br>
         <span id="zone-01-process">New here? Here’s what you need to do:</span>
@@ -53,7 +56,7 @@ const contentString = `
 `
 
 
-const contactString = `
+  const contactString = `
 
       <div id="about-us">Want to know more about 01 Founders, London's new free coding school, with a job guarantee?&thinsp;</div>
       <div class="contact">
@@ -76,7 +79,9 @@ const contactString = `
       </div>
 `
 
-textContent.innerHTML = contentString
+  textContent.innerHTML = contentString
 
-contactContent.insertAdjacentHTML('afterend', contactString)
-contactContent.remove()
+  contactContent.insertAdjacentHTML('afterend', contactString)
+  contactContent.remove()
+
+}
