@@ -1,4 +1,3 @@
-document.body.innerHTML += '<script async src="https://www.googletagmanager.com/gtag/js?id=G-N86JQSKK9B"></script>'
 document.body.innerHTML += `
 <script>
 !function(f,b,e,v,n,t,s)
@@ -16,10 +15,13 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2942291289344991&ev=PageView&noscript=1"
 /></noscript>
 `
+
+document.body.innerHTML += '<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLXP00HX2X"></script>'
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-N86JQSKK9B');
+
+gtag('config', 'G-FLXP00HX2X');
 
 const leftContent = document.querySelector('.left')
 const rightContent = document.querySelector('.right')
