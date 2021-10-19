@@ -82,6 +82,6 @@ if (location.pathname === "/") {
   textContent.innerHTML = contentString
 
   contactContent.insertAdjacentHTML('afterend', contactString)
-  contactContent.remove()
+  contactContent.style.display = 'none'
 
 }
